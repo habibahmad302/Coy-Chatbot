@@ -1,4 +1,4 @@
-# Chatbot Interface with Dynamic Traits and AI Suggestions
+# Coy Chatbot with Dynamic Traits and AI Suggestions
 
 This project is a fully interactive chatbot built using React for the frontend and Flask for the backend, powered by the Groq API. The chatbot allows users to select personality traits that affect the chatbot's responses, generate AI-powered dynamic suggestions, and maintain chat history across sessions.
 
@@ -23,7 +23,7 @@ This project is a fully interactive chatbot built using React for the frontend a
 
 - Node.js (for frontend)
 - Python 3.x (for backend)
-- Groq API Key (to be included in config.json)
+- Groq API Key (to be included in `config.json`)
 
 ### Clone the Repository
 
@@ -86,9 +86,26 @@ cd your-repo-name
    pip install -r requirements.txt
    ```
 
-4. Create a config.json File:
+4. Set Up Environment Variables:
 
-   Create a file named config.json in the backend folder with the following content:
+   Create a `.env` file in the backend folder and set the necessary environment variables. You can use the provided `.env.example` file as a reference:
+
+   ```plaintext
+   APP_URL="http://localhost:3000"
+   DATABASE_URL="mysql://root:root@127.0.0.1:3306/testauth"
+   SECRET="your-secret-key"
+   GOOGLE_ID="your-google-id"
+   GOOGLE_SECRET="your-google-secret"
+   FACEBOOK_CLIENT_ID="your-facebook-client-id"
+   FACEBOOK_CLIENT_SECRET="your-facebook-client-secret"
+   EMAIL_USERNAME="your-email-username"
+   EMAIL_FROM="your-email-from"
+   EMAIL_PASSWORD="your-email-password"
+   ```
+
+5. Create a `config.json` File:
+
+   Create a file named `config.json` in the backend folder with the following content:
 
    ```json
    {
@@ -96,7 +113,7 @@ cd your-repo-name
    }
    ```
 
-5. Run the Flask Server:
+6. Run the Flask Server:
 
    ```bash
    python app.py
