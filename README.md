@@ -88,7 +88,7 @@ cd your-repo-name
 
 4. Set Up Environment Variables:
 
-   Create a `.env` file in the backend folder and set the necessary environment variables. You can use the provided `.env.example` file as a reference:
+   Create a `.env` file in the main folder coy chatbot and set the necessary environment variables. You can use the provided `.env.example` file as a reference:
 
    ```plaintext
    APP_URL="http://localhost:3000"
